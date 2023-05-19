@@ -1,21 +1,21 @@
 body{
   background-image: linear-gradient(
-    325deg,
-    hsl(224, 73%, 59%) 0%,
-    hsl(202, 90%, 70%) 14%,
-    hsl(226, 32%, 87%) 29%,
-    hsl(231, 20%, 93%) 43%,
-    hsl(0, 41%, 97%) 57%,
-    hsl(225, 100%, 94%) 71%,
-    hsl(231, 67%, 82%) 86%,
-    hsl(221, 85%, 66%) 100%
+  325deg,
+  hsl(259deg 80% 46%) 0%,
+  hsl(266deg 71% 78%) 14%,
+  hsl(10deg 100% 94%) 29%,
+  hsl(6deg 99% 71%) 43%,
+  hsl(6deg 98% 70%) 57%,
+  hsl(10deg 100% 94%) 71%,
+  hsl(231deg 82% 86%) 86%,
+  hsl(221deg 84% 63%) 100%,
   );
   height: 100%;
-  margin-top: 0;
+ 
 }
 .App {
   text-align: center;
-  height: 1000px;
+  height: 2000px;
 }
 
 .App-logo {
@@ -60,13 +60,12 @@ body{
 
 
 .navbar{
+
+ 
   position: fixed;
-  top: 0;
-  padding: none !important;
-  margin-left: 1%;
-  right: 1%;
-  font-size: 1.5rem;
-  background-color: rgba(12, 12, 237, 0.3);
+  z-index: 2;
+  width: 100%;
+  background-color: hsl(224, 73%, 59%) ;
   border-radius: 3px;
   color: rgb(237, 47, 13)!important;
   transition: 0.3s ease;
@@ -76,14 +75,16 @@ body{
 .hidden{
   top: -100px;
 }
-.nav-link:hover{
-  
-  background-color: rgb(255, 0, 0);
-  
-}
+
 .nav-link{
-  border-radius: 5px;
-  color: rgb(255, 242, 240) !important;
+  border-bottom: 1px  rgb(115, 115, 203);
+  color: rgb(255, 242, 240)!important;
+  transition: ease 0.3s;
+}
+.nav-link:hover{
+  border-bottom: 1px solid rgb(50, 40, 196);
+  color: rgb(1, 5, 255)!important;
+  
 }
 .nav-link-active{
   color: #fb6161;
@@ -102,16 +103,139 @@ body{
 .img-cont{
   max-height: 400px;
 }
+.social-inicio{
+  color:blue;
+  font-size: 1.3rem;
+  margin-top: .41rem;
+  transition: ease 0.5s;
+}
+.social-inicio-cont{
+  background-color: white;
+  margin-left: .4rem;
+  height:2rem;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  transition: ease 0.3s;
+ 
+}
+
+.social-inicio-cont:hover{
+  background-color: rgb(1, 5, 255);
+  
+}
+.social-inicio:hover{
+  color: aliceblue;
+}
+.navigation-buttons:hover{
+  color:rgb(19, 18, 18)
+}
+
+.logo-tv{
+  max-width:700px;
+ 
+ 
+  margin-top: 5rem;
+  margin-left: 40em;
+}
+
+.logoimg{
+  border-radius: 50%;
+  max-width: 100%;
+  box-shadow: -3px 1px 5px blue;
+ opacity: calc(15%);
+}
+
+.info-inicio{
+  position: absolute;
+  top: 9%;
+  
+}
+.titulo{
+  position: absolute;
+  margin-top:3.5rem;
+  font-weight: 540;
+  color: rgb(14, 13, 109);
+ margin-left: 38rem;
+  padding: 0rem 1rem;
+  font-family: Arial, sans-serif;
+  border-bottom-right-radius:.5rem ;
+  border-bottom-left-radius: .5rem;
+  border-top-left-radius: .5rem ;
+  border-top-right-radius:.5rem ;
+  font-size: 3rem;
+  z-index: 1;
+  
+}
+.titulo::after{
+  content:"";
+  width: 100%;
+  height: 2px;
+  display: block;
+  background-color: #282c34;
+}
+
+
+h2{
+  position: absolute;
+ margin-top: 2rem;
+ font-size: 1rem;
+ margin-left: 38rem;
+ color: rgb(51, 51, 190);
+}
+
+.p-inicio{
+  padding: 0rem;
+  position: absolute;
+  max-width: 700px;
+ font-size:1.4rem;
+  margin-top: 8rem;
+  margin-left: 39rem;
+  z-index: 1;
+  color: rgb(0, 0, 0);
+  background-color: rgba(230, 230, 231, 0.3);
+  border-top-left-radius:.5rem;
+  border-top-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  text-align: left;
+}
+.p-inicio-2{
+  position: absolute;
+  max-width: 700px;
+ font-size:1.4rem;
+  margin-top: 30rem;
+  margin-left: 39rem;
+  z-index: 1;
+  background-color: rgba(230, 230, 231, 0.3);
+  border-top-left-radius:.5rem;
+  border-top-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  text-align: left;
+}
 
 
 
-
-
-
-
-
-
-
+.img-inicio{
+  position: absolute;
+  left: 1.5%;
+  top: 14%;
+  z-index: 0;
+  mix-blend-mode: multiply;
+}
+.div2-inicio{
+ 
+  position:relative; 
+  margin-top: 22rem;
+  background-color: whitesmoke;
+  box-shadow: 0px -1px 8px  rgb(97, 81, 81);
+}
+.cards-inicio{
+  border: none;
+  margin: auto;
+}
 
 
 /* NOSOTROS*/
@@ -119,11 +243,7 @@ body{
 .up-nosotros{
   margin-bottom: 7rem;
 }
-.card{
-  margin: auto;
-  max-height: 300px;
-  padding: 0;
-}
+
 
 .img-nosotros{
   max-width: 300px;
