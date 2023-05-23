@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 import foto from "../pics/foto.jpg"
 import { Card1 } from '../components/card1.jsx';
 import ivann from "../pics/ivann.jpg"
-
+import { Footer } from '../components/footer';
 function App() {
 
   const people = [
@@ -76,13 +76,13 @@ function App() {
   return (
     <div className="App">
        <Navbar prevScrollPos={prevScrollPos} visible={visible}/>
-       <div className="absolute">
+        <div className="absolute">
        <div className="d-flex row img-cont">
           <div className="logo-tv">
              <img className='logoimg' src={logotv} alt="" />
           </div>
           <div className="info-inicio ">
-             <div className="titulo-cont">
+            <div className="titulo-cont">
                  <h1 className='titulo'>Telemercado</h1>
                  <h2>-¿Quiénes somos?</h2>
              </div>
@@ -101,27 +101,64 @@ function App() {
 <div className="img-inicio">
   <img src={foto} alt="" />
  </div>
- </div>
-  <div className='div2-inicio'>
-    <h1 className='titulo-equipo'>Nuestro Equipo</h1>
-    <div className="cards">
-      <div className="d-flex row">
-    
-         <div className="col-4"><Card1 
-         name={"Nicol Solano"} 
-         description={"hola soy niky"}
-         link={""}
-         img={ivann}
-         /></div>
-    
-      </div>
-      
-    </div>
-  </div>
-     
-
-      
-
+        </div>
+        <div className='div2-inicio'>
+          <h1 className='titulo-equipo'>Nuestro Equipo</h1>
+          <div className="cards">
+          <div className="d-flex row cards-holder-inicio">
+            <div className="col-6">   
+                <Card1 
+                    name={"Nicol Solano"} 
+                    description={"hola soy niky"}
+                    link={""}
+                    img={ivann}
+                />  
+            </div>
+            <div className="col-6">
+              <Card1 
+                  name={"Nicol Solano"} 
+                  description={"hola soy niky"}
+                  link={""}
+                  img={ivann}
+              />
+            </div>
+          </div>
+          <div className="row cards-holder-inicio">
+              <div className="col-4">
+                <Card1 
+                    name={"Nicol Solano"} 
+                    description={"hola soy niky"}
+                    link={""}
+                    img={ivann}
+                />
+              </div>
+              <div className="col-4">
+                <Card1 
+                    name={"Nicol Solano"} 
+                    description={"hola soy niky"}
+                    link={""}
+                    img={ivann}
+                />
+              </div>
+              <div className="col-4">
+                <Card1 
+                    name={"Nicol Solano"} 
+                    description={"hola soy niky"}
+                    link={""}
+                    img={ivann}
+                />
+              </div>
+          </div>
+          </div>
+        </div>
+        <div className="frase container-fluid">
+            <span className="quote-mark"><i class="fa-solid fa-quote-right"></i></span>
+              <h1 className='h1-frase' >¿Que le compro, que le vendo, que le cambio?</h1>
+              <p className='quote'>- Suerte es lo que sucede cuando la preparación y la oportunidad se encuentran y fusionan</p>  
+        </div>
+        <div className="footer-cont">
+              <Footer/>
+        </div>
     </div>
   );
 }
