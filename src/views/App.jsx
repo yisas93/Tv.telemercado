@@ -1,81 +1,27 @@
 
 import '../App.css';
-import wallpaper from "../pics/wallpaper.jpg"
+
 import logotv from "../pics/logotv.jpg"
 import { Navbar } from '../components/navbar.jsx';
-import { useState, useEffect } from 'react';
-import foto from "../pics/foto.jpg"
+import { useState, useEffect, useRef } from 'react';
+
 import { Card1 } from '../components/card1.jsx';
-import ivann from "../pics/ivann.jpg"
+import ivan from "../pics/ivan.jpg"
 import { Footer } from '../components/footer';
+import portada from "../pics/portada.jpg"
+import niky from "../pics/niky.jpg"
+import oscar2 from "../pics/oscar2.jpg"
+import roy from "../pics/roy.jpg"
+import kenji from "../pics/kenji.jpg"
 function App() {
 
-  const people = [
-    {
-      name: "Nicol Solano",
-      description: "nfjfnjkdnfkjndjfnjkdsnfdjsfjkdnjfdjfndjknfjkdsnkfndsnjfnjdnfs",
-      foto:ivann,
-      link:""
-    },
-    {
-      name: "Iván Díaz",
-      description: "nfjfnjkdnfkjndjfnjkdsnfdjsfjkdnjfdjfndjknfjkdsnkfndsnjfnjdnfs",
-      foto: ivann,
-      link:""
-    },
-    {
-      name: "Otro mas",
-      description: "nfjfnjkdnfkjndjfnjkdsnfdjsfjkdnjfdjfndjknfjkdsnkfndsnjfnjdnfs",
-      foto: ivann,
-      link:""
-    },
-    {
-      name: "Otra Persona",
-      description: "nfjfnjkdnfkjndjfnjkdsnfdjsfjkdnjfdjfndjknfjkdsnkfndsnjfnjdnfs",
-      foto: ivann,
-      link:""
-    },
-    {
-      name: "Ultima Persona",
-      description: "nfjfnjkdnfkjndjfnjkdsnfdjsfjkdnjfdjfndjknfjkdsnkfndsnjfnjdnfs",
-      foto: ivann,
-      link:""
-    }
-  ]
 
 
 
 
-
-
-
-   // State to keep track of previous scroll position
-  const [prevScrollPos, setPrevScrollPos]= useState(window.scrollY)
-
-  // State to determine the visibility of the navbar
-  const [visible, setVisible]= useState(true)
-
-  useEffect(()=>{
-    const handleScroll = ()=>{
-      // Get the current scroll position
-      const currentScrollPos = window.scrollY
-      // Compare current scroll position with the previous one
-      setVisible(prevScrollPos > currentScrollPos )
-      // Update the previous scroll position with the current one
-      setPrevScrollPos(currentScrollPos)
-    }
-    // Add event listener to the scroll event
-    window.addEventListener("scroll", handleScroll)
-
-    // Clean up by removing the event listener when component unmounts
-    return ()=>{
-      
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [prevScrollPos])
   return (
     <div className="App">
-       <Navbar prevScrollPos={prevScrollPos} visible={visible}/>
+       <Navbar/>
         <div className="absolute">
        <div className="d-flex row img-cont">
           <div className="logo-tv">
@@ -99,53 +45,58 @@ function App() {
 
        </div>
 <div className="img-inicio">
-  <img src={foto} alt="" />
+  <img className='portada' src={portada} alt="" />
  </div>
         </div>
         <div className='div2-inicio'>
-          <h1 className='titulo-equipo'>Nuestro Equipo</h1>
+          <h1 className='titulo-equipo'>Nuestro Equipo de Profesionales</h1>
           <div className="cards">
           <div className="d-flex row cards-holder-inicio">
             <div className="col-6">   
                 <Card1 
                     name={"Nicol Solano"} 
-                    description={"hola soy niky"}
+                    description={"Presentadora"}
                     link={""}
-                    img={ivann}
+                    img={niky}
+                    class={"card-img-top "}
                 />  
             </div>
             <div className="col-6">
               <Card1 
-                  name={"Nicol Solano"} 
-                  description={"hola soy niky"}
+                  name={"Iván Díaz"} 
+                  description={"Presentador"}
                   link={""}
-                  img={ivann}
+                  img={ivan}
+                  class={"card-img-top"}
               />
             </div>
           </div>
           <div className="row cards-holder-inicio">
               <div className="col-4">
                 <Card1 
-                    name={"Nicol Solano"} 
-                    description={"hola soy niky"}
+                    name={"Oscar Barrantes"} 
+                    description={"Gerente General"}
                     link={""}
-                    img={ivann}
+                    img={oscar2}
+                    class={"card-img-top"}
                 />
               </div>
               <div className="col-4">
                 <Card1 
-                    name={"Nicol Solano"} 
-                    description={"hola soy niky"}
+                    name={"Roy Roa"} 
+                    description={"Community Manager"}
                     link={""}
-                    img={ivann}
+                    img={roy}
+                    class={"card-img-top"}
                 />
               </div>
               <div className="col-4">
                 <Card1 
-                    name={"Nicol Solano"} 
-                    description={"hola soy niky"}
+                    name={"Kenji Sánchez"} 
+                    description={"Community Manager"}
                     link={""}
-                    img={ivann}
+                    img={kenji}
+                    class={"card-img-top-2"}
                 />
               </div>
           </div>

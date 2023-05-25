@@ -1,6 +1,6 @@
 import React from "react";
-import ivann from "../pics/ivann.jpg"
-import nikyy from "../pics/nikyy.jpg"
+import ivan from "../pics/ivan.jpg"
+import niky from "../pics/niky.jpg"
 import { Navbar } from "../components/navbar.jsx";
 import { useState, useEffect } from "react";
 export const Nosotros=()=>{
@@ -21,8 +21,8 @@ export const Nosotros=()=>{
   }, [prevScrollPos])
 
     return(
-        <div className="container-fluid nosotros ">
-            <Navbar prevScrollPos={prevScrollPos} visible={visible}/>
+        <div className=" nosotros ">
+            <Navbar />
             <div className="up-nosotros">
                 <div className="title-nosotros">
             <h1 className="h1-nosotros">Conócenos!</h1>
@@ -39,7 +39,7 @@ export const Nosotros=()=>{
             <div class="card1  mb-3 ms-5 col-5" style={{maxWidth: "600px"}}>
   <div class="row g-0">
     <div class="col-md-6">
-      <img src={nikyy} className="img-nosotros" alt="..."/>
+      <img src={niky} className="img-nosotros" alt="..."/>
     </div>
     <div class="col-md-6 ">
       <div class="card-body ">
@@ -71,7 +71,7 @@ export const Nosotros=()=>{
 <div class="card1 mb-3 ms-5  col-5" style={{maxWidth: "700px"}}>
   <div class="row g-0">
     <div class="col-md-7">
-      <img src={ivann} className="img-nosotros" alt="..." />
+      <img src={ivan} className="img-nosotros" alt="..." />
     </div>
     <div class="col-md-5 ">
       <div class="card-body">
