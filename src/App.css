@@ -210,7 +210,7 @@ body{
 }
 
 
-h2{
+.h2-inicio{
   position: absolute;
  margin-top: 2rem;
  font-size: 1rem;
@@ -460,33 +460,62 @@ h2{
   width: 100%;
 }
 .up-nosotros{
-  margin-bottom: 7rem;
+ height: 30rem;
+ border-bottom-left-radius: 60%;
+ border-bottom-right-radius: 70% ;
+ background-color: rgba(168, 234, 252, 0.37);
+ box-shadow: 1px 1px 1rem rgba(39, 152, 227, 0.18);
 }
-
-
-.img-nosotros{
-  max-width: 300px;
+.up{
+  margin-bottom: 4rem;
+}
+.img-holder-nosotros{
+  max-width: 400px;
   max-height: 300px;
+}
+.img-nosotros{
+  max-height: 500px;
+}
+.logo-nosotros{
+  max-width: 100%;
+  margin-left: 6rem;
+  margin-top: 1rem; 
+  border-radius: 50%;
+}
+.logo-nosotros-cont{
+  max-width: 300px;
+  
 }
 
 
 .title-nosotros{
-  text-align: center;
-  
-  margin-bottom: 3rem;
-  color: blue;
-  text-shadow: 1px 1px 2px rgb(21, 21, 21);
+
+ margin-top: 1rem;
+ max-width: 100%;
+
+ max-height: 300px;
+ margin-left: 3rem;
+}
+
+.info-nosotros{
+  font-size: 2rem;
 }
 
 .info{
-  max-width: 800px;
-  margin: auto;
+  max-width: 1000px;
+  margin-left: 5rem;
   font-size: 1.2rem;
 }
 .card1{
  color: rgb(18, 40, 162);
+ width: 1000px;
+ margin: auto;
+ 
 }
-
+.icons{
+  margin-top: 20rem;
+  
+}
 .icon{
   font-size: 1.5rem;
   margin-bottom: 5px;
@@ -498,8 +527,66 @@ a{
   text-decoration: none;
 }
 .h1-nosotros{
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
+
+.h2-nosotros{
+  padding-top: 3rem;
+  color: rgb(14, 13, 109);;
+}
+.card-cont{
+
+  background-color: #d6dddf;
+}
+.content-card1{
+  height: 500px;
+}
+
+.cards-nosotros{
+  margin-top: 10rem;
+}
+.card1{
+  margin: auto;
+  height: 500px;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.side-card1{
+  height: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

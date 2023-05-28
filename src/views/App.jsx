@@ -30,7 +30,7 @@ function App() {
           <div className="info-inicio ">
             <div className="titulo-cont">
                  <h1 className='titulo'>Telemercado</h1>
-                 <h2>-¿Quiénes somos?</h2>
+                 <h2 className='h2-inicio'>-¿Quiénes somos?</h2>
              </div>
           <div className="p-inicio">
               <p>En nuestro emocionante y dinámico programa, brindamos a emprendedores y dueños de negocios la oportunidad de promocionar sus marcas y negocios de una manera única y efectiva. Nos enorgullece ser un set de presentación para aquellos que desean compartir su pasión y éxito con una audiencia comprometida.
