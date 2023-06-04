@@ -44,7 +44,7 @@ export const Card1=(props)=>{
     <h5 class="card-title">{props.name}</h5>
     <p class="card-text">{props.description}</p>
   </div>
-    <a href={props.link} class="btn btn-primary">Conoce más! → </a>
+    <a href={props.link} class="btn btn-primary btn-card">Conoce más! → </a>
 </div>
         
     )

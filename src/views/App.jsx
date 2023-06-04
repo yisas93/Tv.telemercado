@@ -1,10 +1,6 @@
-
 import '../App.css';
-
 import logotv from "../pics/logotv.jpg"
 import { Navbar } from '../components/navbar.jsx';
-import { useState, useEffect, useRef } from 'react';
-
 import { Card1 } from '../components/card1.jsx';
 import ivan from "../pics/ivan.jpg"
 import { Footer } from '../components/footer';
@@ -13,6 +9,7 @@ import niky from "../pics/niky.jpg"
 import oscar2 from "../pics/oscar2.jpg"
 import roy from "../pics/roy.jpg"
 import kenji from "../pics/kenji.jpg"
+import portada2 from "../pics/portada2.jpg"
 function App() {
 
 
@@ -22,6 +19,14 @@ function App() {
   return (
     <div className="App">
        <Navbar/>
+       <div className="up-inicio d-flex">
+        <div className="portada-container"><img src={portada2} className='portada2' alt="" /></div>
+        <div className="logo-portada-holder">
+          <img className="logo-portada" src={logotv} alt="" />
+        </div>
+        
+
+       </div>
         <div className="absolute">
        <div className="d-flex row img-cont">
           <div className="logo-tv">

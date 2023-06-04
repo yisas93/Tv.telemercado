@@ -18,10 +18,10 @@ export const Navbar=({ prevScrollPos, visible })=>{
             </div>
           </div>
           <div className="ms-auto d-flex"> 
-          <div className="social-inicio-cont"><i class="fa-brands fa-whatsapp me-1 ms-1 social-inicio" ></i></div>
-          <div className="social-inicio-cont"><i class="fa-brands fa-facebook me-1 ms-1 social-inicio"></i></div>
-          <div className="social-inicio-cont"> <i class="fa-brands fa-instagram me-1 ms-1 social-inicio"></i></div>
-          <div className="social-inicio-cont"><i class="fa-brands fa-tiktok me-1 ms-1 social-inicio"></i></div>
+          <div className="social-inicio-cont-whatsapp me-2"><a href="https://api.whatsapp.com/send?phone=50660472692"><i class="fa-brands fa-whatsapp me-1 ms-1 social-inicio" ></i></a></div>
+          <div className="social-inicio-cont-facebook me-2"><i class="fa-brands fa-facebook me-1 ms-1 social-inicio"></i></div>
+          <div className="social-inicio-cont-instagram me-2"> <i class="fa-brands fa-instagram me-1 ms-1 social-inicio"></i></div>
+          <div className="social-inicio-cont-tik-tok"><i class="fa-brands fa-tiktok me-1 ms-1 social-inicio"></i></div>
           
           
         
