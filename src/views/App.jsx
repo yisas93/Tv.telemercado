@@ -19,9 +19,9 @@ function App() {
   return (
     <div className="App">
        <Navbar/>
-       <div className="up-inicio d-flex">
+       <div className="up-inicio d-flex" >
         <div className="portada-container"><img src={portada2} className='portada2' alt="" /></div>
-        <div className="logo-portada-holder">
+        <div className="logo-portada-holder" >
           <img className="logo-portada" src={logotv} alt="" />
         </div>
         

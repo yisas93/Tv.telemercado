@@ -891,13 +891,16 @@ Extra large devices  1200px
 
 .logo-portada{
   margin-left: 14rem;
+  max-width: 100%;
 }
 .logo-portada-holder{
   width: 300px;
+  
 }
 .portada-container{
   width: 300px;
   height: 300px;
+  
 }
 .portada{
   max-width: 300px;
@@ -989,9 +992,7 @@ Extra large devices  1200px
   .img-roy{
     max-width: 400px;
   }
-  .img-kenji{
 
-  }
 }
 
 
@@ -1011,7 +1012,7 @@ Extra large devices  1200px
     border-top-right-radius: 0%;
   }
 
-}
+
 
 .mail-contact, .wsp-contact{
   margin-left: 5rem;
@@ -1106,7 +1107,7 @@ Extra large devices  1200px
 }
 
 
-
+}
 
 @media (max-width:576px){
   .h1-contact{
